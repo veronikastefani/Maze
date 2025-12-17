@@ -1,4 +1,4 @@
-# Maze – Pathfinding Visualizer 🏃🏼‍♀️
+# Maze Game – Pathfinding Visualizer 🏃🏼‍♀️
 
 **Maze** merupakan sebuah game Java berbasis **GUI** yang dirancang untuk memvisualisasikan berbagai **algoritma pencarian jalur (*pathfinding*)** dalam sebuah labirin dinamis. Game ini juga menerapkan **sistem biaya medan (*terrain cost*)** sehingga setiap algoritma dapat menunjukkan perilaku dan hasil yang berbeda.
 
