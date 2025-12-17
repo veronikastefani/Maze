@@ -1,48 +1,42 @@
-# Maze Game – Pathfinding Visualizer 🏃🏼‍♀️
+# Maze - Pathfinding Visualizer 🏃‍♂️
 
-**Maze** merupakan sebuah game Java berbasis **GUI** yang dirancang untuk memvisualisasikan berbagai **algoritma pencarian jalur (*pathfinding*)** dalam sebuah labirin dinamis. Game ini juga menerapkan **sistem biaya medan (*terrain cost*)** sehingga setiap algoritma dapat menunjukkan perilaku dan hasil yang berbeda.
+**Maze** is a Java-based **GUI** application designed to visualize various **pathfinding algorithms** within a dynamic maze environment. This project incorporates a **terrain cost system**, allowing each algorithm to demonstrate unique behaviors and results based on the weight of the path.
 
-## Fitur Utama:
-### 🎬 Visualisasi Interaktif
-* Karakter 🏃 akan bergerak **selangkah demi selangkah** mengikuti jalur yang dipilih sesuai algoritma yang diinginkan.
-* Proses pencarian jalur dapat diamati secara langsung melalui animasi.
-### 🧠 Beragam Algoritma Pathfinding
-Game ini mendukung beberapa algoritma, yaitu:
-* **Breadth First Search (BFS)**
-  Mencari jalur dengan **jumlah langkah paling sedikit** (tanpa mempertimbangkan biaya).
-* **Depth First Search (DFS)**
-  Menjelajah jalur secara mendalam, bersifat eksploratif dan tidak menjamin jalur terbaik.
-* **Dijkstra**
-  Menentukan jalur dengan **biaya total terendah** berdasarkan cost medan.
-* **A*** **(A-Star)**
-  Algoritma yang lebih efisien dengan memanfaatkan **heuristik** untuk mencapai tujuan lebih cepat dan optimal.
+## Key Features:
+### Interactive Visualization
+* Watch the character 🏃 move **step-by-step** along the calculated path.
+* Observe the logic behind path discovery through smooth, real-time animations.
 
-### 🌍 Sistem Biaya Medan (*Terrain Cost*)
-Setiap jenis medan memiliki biaya berbeda yang memengaruhi jalur yang dipilih algoritma:
-* ⬜ **Default** : Cost 0
-* 🟩 **Rumput (Grass)** : Cost 1
-* 🟫 **Lumpur (Mud)** : Cost 5
-* 🟦 **Air (Water)** : Cost 10
+### Supported Pathfinding Algorithms
+Compare how different algorithm solve the same puzzle:
+* **Breadth-First Search (BFS)**: Focuses on the **fewest number of steps**, ignoring terrain costs.
+* **Depth-First Search (DFS)**: An exploratory approach that dives deep into paths; adventurous but rarely optimal.
+* **Dijkstra’s Algorithm**: The gold standard for finding the **cheapest path** based on accumulated terrain costs.
+* **A*** **(A-Star)**: A smart, high-performance algorithm that uses **heuristics** to find the most efficient route both in cost and speed.
 
-### 🔀 Jalur Alternatif
-Labirin dirancang dengan **banyak rute berbeda**, sehingga hasil pencarian dapat bervariasi tergantung algoritma yang digunakan.
+### Terrain Cost System
+Different tiles impose different "penalties", forcing smart algorithms to make strategic choices:
+* ⬜ **Default Terrain**: Cost 0
+* 🟩 **Grass**: Cost 1
+* 🟫 **Mud**: Cost 5
+* 🟦 **Water**: Cost 10
 
-## 🛠️ Cara Menjalankan Aplikasi
-1. Pastikan **Java JDK** sudah terpasang pada komputer.
-2. Clone repository ini atau unduh seluruh file `.java`.
-3. Buka **terminal/command prompt** pada folder proyek.
-4. Compile seluruh file Java:
+### Multiple Routes
+The maze is generated with **alternative paths and loops**, ensuring that algorithms have multiple options to choose from, highlighting the difference between "the shortest path" and "the cheapest path."
+
+## How to Run
+1. Ensure **Java JDK** is installed on your system.
+2. Clone this repository or download all `.java` files.
+3. Open your **terminal or command prompt** in the project folder.
+4. Compile the source code:
    ```bash
    javac *.java
-   ```
-5. Jalankan program utama:
+5. Run the program:
    ```bash
    java MazeGame
-   ```
-   
-## 🎯 Tujuan Proyek
 
-Proyek ini dibuat sebagai media pembelajaran untuk:
-* Memahami cara kerja algoritma pathfinding
-* Membandingkan efisiensi algoritma BFS, DFS, Dijkstra, dan A*
-* Melihat pengaruh biaya medan terhadap jalur yang dihasilkan
+## Project Goals
+This project serves as an educational tool to:
+* Visualize the internal logic of famous search algorithms.
+* Compare the efficiency of BFS, DFS, Dijkstra, and A* in real-time.
+* Observing the effect of terrain costs on the resulting path.
