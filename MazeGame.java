@@ -58,8 +58,8 @@ public class MazeGame extends JFrame {
 
         algorithmBox = new JComboBox<>(new String[]{"BFS", "DFS", "Dijkstra", "A*"});
         generateBtn = new JButton("Generate Maze Baru");
-        solveBtn = new JButton("Mulai Animasi 🏃");
-        clearBtn = new JButton("Clear Path Only 🧹"); // Inisialisasi tombol baru
+        solveBtn = new JButton("Mulai Animasi");
+        clearBtn = new JButton("Clear Path Only"); // Inisialisasi tombol baru
         
         statusLabel = new JLabel("Status: Siap");
         costLabel = new JLabel("Path Cost: 0");
@@ -166,7 +166,7 @@ public class MazeGame extends JFrame {
                     index++;
                 } else {
                     ((Timer)e.getSource()).stop();
-                    statusLabel.setText("Status: Sampai! 🏁");
+                    statusLabel.setText("Status: Sampai!");
                 }
             }
         });
@@ -177,4 +177,5 @@ public class MazeGame extends JFrame {
         try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) {}
         SwingUtilities.invokeLater(() -> new MazeGame().setVisible(true));
     }
+
 }
